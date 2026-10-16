@@ -1,0 +1,261 @@
+:root {
+    --color-bg-main: #F5F5F5;
+    --color-bg-dark: #1A1A1A;
+    --color-primary: #0D47A1;
+    --color-purchase: #D32F2F;
+    --color-rental: #0D47A1;
+    --color-gold: #C9A227;
+    --color-text-main: #1A1A1A;
+    --color-text-inverted: #F5F5F5;
+    --color-alert: #FD7E14;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-inverted);
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-text-inverted);
+}
+
+.logo {
+    height: 56px;
+    margin-right: 12px;
+}
+
+.brand-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 24px;
+}
+
+.main-nav a {
+    color: var(--color-text-inverted);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    color: var(--color-gold);
+}
+
+.hero {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--color-primary);
+    color: var(--color-text-inverted);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-gold);
+    color: var(--color-bg-dark);
+}
+
+.badge-achat {
+    background-color: var(--color-purchase);
+    color: var(--color-text-inverted);
+}
+
+.badge-location {
+    background-color: var(--color-rental);
+    color: var(--color-text-inverted);
+}
+
+.site-footer {
+    padding: 24px 40px;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-inverted);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 48px 24px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* US01-REGISTER-CSS-START */
+.register-section {
+    padding: 3rem 1.5rem;
+    background: #f7f7f7;
+}
+
+.register-section .section-header {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.register-form {
+    max-width: 520px;
+    margin: 2rem auto 0;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-row label {
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.form-row input {
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-row input:focus {
+    outline: 2px solid #222222;
+    outline-offset: 2px;
+}
+
+.form-row small {
+    margin-top: 0.25rem;
+    color: #666666;
+}
+
+.form-message {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.form-message.success {
+    color: #1f7a3a;
+}
+
+.form-message.error {
+    color: #b00020;
+}
+/* US01-REGISTER-CSS-END */
+/* Section login US02 */
+.login-section {
+    background-color: var(--color-bg-main);
+}
+
+.login-form {
+    max-width: 420px;
+    margin: 32px auto;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: 2px solid var(--color-gold);
+    border-color: var(--color-primary);
+}
+
+.login-message {
+    min-height: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.client-area {
+    max-width: 420px;
+    margin: 24px auto 0;
+    padding: 20px;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-inverted);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.login-message.success {
+    color: #1B5E20;
+}
+
+.login-message.error {
+    color: var(--color-purchase);
+}
